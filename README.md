@@ -1,9 +1,9 @@
 # Unified control/status register
 10 register values.
 
-control: 9 downto 1 is used for PS to PL; register 0 is for interrupt handling
+control: 0 downto 8 is used for PS to PL; register 9 is for interrupt handling
 
-status: 7 downto 1 is used for PL to PS; 9 downto 8 is for device DNA; 0 for interrupt handling
+status: 2 downto 9 is used for PL to PS; 1 downto 0 is for device DNA; 9 for interrupt handling
 
 tested using Koheron SDK. Interrupt yet to be tested and is not fully implemented yet.
 
